@@ -12,7 +12,7 @@ public class ProductWorker {
     @Autowired
     WorkerHandler handler;
 
-    @JobWorker(type = "worker")// , name = "main-worker" name?
+    @JobWorker(type = "worker")
     public void zeebeWorker(final JobClient client, final ActivatedJob job) throws Exception {
         handler.handle(client, job);
     }

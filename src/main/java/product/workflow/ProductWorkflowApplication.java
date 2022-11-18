@@ -9,12 +9,10 @@ import java.util.Map;
 
 @SpringBootApplication
 @EnableZeebeClient
-@Deployment(resources = "classpath:dummy.bpmn")
+@Deployment(resources = "classpath:product.bpmn")
 public class ProductWorkflowApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ProductWorkflowApplication.class, args);
     }
 }
-
-
